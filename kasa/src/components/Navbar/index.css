@@ -3,14 +3,29 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
+} 
+
+header img {
+    width: 145px;
+    height: 47px;
 }
 
-img {
-    width: 210px;
-    height: 68px;
-    object-fit: cover;
+nav ul {
+    display: flex;
 }
 
-nav a{
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
     color: red;
+    margin-left: 10px;
 }
+
+@media screen and (min-width:1024px) {
+    header img {
+        width: 210px;
+        height: 68px;
+    }
+  }

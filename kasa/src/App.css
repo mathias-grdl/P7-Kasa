@@ -1,4 +1,35 @@
-.App {
+main {
+  margin: 0 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FF6060;
+}
+
+
+@media screen and (min-width:1024px) {
+  main {
+    margin: 0 100px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +66,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

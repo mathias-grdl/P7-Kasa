@@ -8,14 +8,14 @@ import Error from './components/Error'
 
 function App() {
   return (
-    <div>
+    <main>
       <Navbar />
-      <Routes>
+      <Routes> 
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
-    </div> 
+    </main> 
   )
 }
 
