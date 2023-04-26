@@ -1,3 +1,6 @@
+@import url("./normalize.css");
+@import url("./variable.css");
+
 main {
   margin: 0 20px;
 }
@@ -10,7 +13,8 @@ h1 {
 h2 {
   font-size: 18px;
   font-weight: 500;
-  color: #FF6060;
+  color: var(--primary-color);
+  line-height: 25.67px;
 }
 
 
