@@ -1,7 +1,15 @@
 img {
-    width: 145px;
+    width: 85px;
     height: 47px;
+    object-fit: contain;
 }
+
+@media screen and (min-width:375px) {
+    img {
+        width: 145px;
+        height: 47px;
+    }
+  }
 
 @media screen and (min-width:1024px) {
     img {
