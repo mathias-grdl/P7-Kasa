@@ -1,11 +1,11 @@
 import './index.css';
 import { Link } from 'react-router-dom'
-import logoImg from '../../asset/images/logo.svg';
+import logoImg from '../../asset/images/logoBlanc.svg';
 
-function Logo() {
+function LogoBlanc() {
     return (
       <Link to="/"><img src={logoImg} alt="Logo kasa" /></Link>
     )
   }
   
-  export default Logo
+  export default LogoBlanc
