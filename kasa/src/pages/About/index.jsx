@@ -1,11 +1,9 @@
 import Banner from "../../components/Banner";
 import bannerImg from "../../asset/images/bannerAbout.svg";
 
-
-
-function About() {
+function About(style) {
   return (
-    Banner(bannerImg)
+    Banner(bannerImg, style="V2")
     )
 }
 

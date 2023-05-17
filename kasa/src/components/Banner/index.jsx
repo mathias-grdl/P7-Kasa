@@ -1,11 +1,11 @@
 import "./index.css";
 import React from "react";
 
-function Banner(bannerImg) {
+function Banner(bannerImg, style, bannerText) {
   return (
-    <div className={"banner"}>
+    <div className={"banner" + style}>
       <img src={bannerImg} alt="Bannière kasa" />
-      {/* <p></p> */}
+      <p>{bannerText}</p>
     </div>
   );
 }
