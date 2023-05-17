@@ -1,10 +1,10 @@
 import Banner from "../../components/Banner";
+import bannerImg from '../../asset/images/bannerHome.svg';
+
 function Home() {
-  return (
-    <div>
-      <Banner page="Home" />
-    </div>
-  );
+  return (  
+      Banner(bannerImg)
+  )
 }
 
 export default Home;

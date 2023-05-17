@@ -1,13 +1,13 @@
 import "./index.css";
 import React from "react";
 
-const Banner = ({ page }) => {
+function Banner(bannerImg) {
   return (
-    // props
-    <div className={"bannerContainer" + page}>
-      <p>Chez vous, partout et ailleurs</p>
+    <div className={"banner"}>
+      <img src={bannerImg} alt="Bannière kasa" />
+      {/* <p></p> */}
     </div>
   );
-};
+}
 
 export default Banner;

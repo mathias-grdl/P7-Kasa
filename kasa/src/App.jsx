@@ -10,8 +10,8 @@ import ErrorPage from './pages/Error/index'
 function App() {
   return (
     <div>
+      <Header />
       <main>
-        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/apropos" element={<About />} />

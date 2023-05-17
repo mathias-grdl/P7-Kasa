@@ -1,11 +1,12 @@
 import Banner from "../../components/Banner";
+import bannerImg from "../../asset/images/bannerAbout.svg";
+
+
 
 function About() {
-    return (
-    <div>
-    <Banner page="About" />
-    </div>
+  return (
+    Banner(bannerImg)
     )
-  }
-  
-  export default About
+}
+
+export default About;

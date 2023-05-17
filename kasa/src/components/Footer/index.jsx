@@ -1,11 +1,12 @@
 import './index.css';
-import logo_kasa from "../LogoBlanc/index.jsx";
+import logo_kasa from "../Logo/index.jsx";
+import logoImg from '../../asset/images/logoWhite.svg';
 
 function Header() {
   return (
 
   <footer>
-    {logo_kasa()}
+    {logo_kasa(logoImg)}
     <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   )
