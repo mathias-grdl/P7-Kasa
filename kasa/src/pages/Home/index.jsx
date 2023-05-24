@@ -1,9 +1,15 @@
 import Banner from "../../components/Banner";
 import bannerImg from '../../asset/images/bannerHome.svg';
 
-function Home(style, bannerText) {
+function Home() {
+  const banner = {
+    img: bannerImg,
+    style: "banner",
+    text: "Chez vous, partout et ailleurs"
+  }
+  
   return (  
-      Banner(bannerImg, style="", bannerText="Chez vous, partout et ailleurs")
+      Banner(banner)
   )
 }
 
