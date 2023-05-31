@@ -7,7 +7,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: red;
+    color: var(--primary-color);
     margin-right: 10px;
     font-size: 12px;
     text-transform: uppercase;

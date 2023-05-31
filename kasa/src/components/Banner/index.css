@@ -11,7 +11,7 @@
 .banner::before, .bannerBig::before{
     content: " ";
     position: absolute;
-    background-color: black;
+    background-color: var(--color-black);
     width: 100%;
     height: 100%;
     top: 0;
