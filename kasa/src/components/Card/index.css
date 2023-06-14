@@ -1,0 +1,15 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F7F7F7;
+}
+
+.card, .card img{
+    width: 340px;
+    height: 340px;
+    margin: 10px;
+}
+
+.card h2 {
+    z-index: 1;
+}

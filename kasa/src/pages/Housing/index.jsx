@@ -1,4 +1,4 @@
-import Carrousel from "../../components/Carousel";
+import Accordion from "../../components/Accordion";
 
 const data = [
   {
@@ -14,7 +14,7 @@ const data = [
 function Housting() {
     return (
       <div>
-        <Carrousel data={data}/>
+        <Accordion data={data}/>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner";
 import bannerImg from "../../asset/images/bannerAbout.svg";
-import Carrousel from "../../components/Carousel";
+import Accordion from "../../components/Accordion";
 
 const data = [
   {
@@ -31,7 +31,7 @@ function About() {
   return (
     <div>
       {Banner(banner)}
-      <Carrousel data={data}/>
+      <Accordion data={data}/>
     </div>
   );
 }

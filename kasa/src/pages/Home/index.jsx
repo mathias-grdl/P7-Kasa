@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner";
 import bannerImg from '../../asset/images/bannerHome.svg';
+import Card from '../../components/Card';
 
 function Home() {
   const banner = {
@@ -9,7 +10,10 @@ function Home() {
   }
   
   return (  
-      Banner(banner)
+    <div>
+     {Banner(banner)}
+      <Card/>
+    </div>
   )
 }
 
