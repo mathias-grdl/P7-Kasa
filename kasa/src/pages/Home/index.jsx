@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner";
 import bannerImg from '../../asset/images/bannerHome.svg';
-import Card from '../../components/Card';
+import Cards from '../../components/Cards';
 
 function Home() {
   const banner = {
@@ -12,7 +12,7 @@ function Home() {
   return (  
     <div>
      {Banner(banner)}
-      <Card/>
+      <Cards/>
     </div>
   )
 }
