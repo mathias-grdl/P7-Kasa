@@ -2,8 +2,7 @@ import "./index.css";
 import { useState } from "react";
 import React from "react";
 
-
-function Carrousel({data}) {
+function Carrousel({ data }) {
   // index is a state variable and setIndex is the setter function.
   const [index, setIndex] = useState(false);
 
@@ -17,23 +16,27 @@ function Carrousel({data}) {
   };
 
   return (
-      <div className="accordion">
-        {data.map((item, i) => (
-          <div className="item">
-            <div className="title" onClick={() => toggle(i)}>
-              <h2>{item.title}</h2>
-              <span>{index === i ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-sharp fa-solid fa-chevron-down"></i>}</span>
-            </div>
-            {/* Si index est égal à i, ajoutez la classe "show"  */}
-            <div className={index === i ? "content show" : "content"}>
-              {item.content}
-            </div>
+    <div className="accordion">
+      {data.map((item, i) => (
+        <div className="item" key={i}>
+          <div className="title" onClick={() => toggle(i)}>
+            <h2>{item.title}</h2>
+            <span>
+              {index === i ? (
+                <i class="fa-solid fa-chevron-up"></i>
+              ) : (
+                <i class="fa-sharp fa-solid fa-chevron-down"></i>
+              )}
+            </span>
           </div>
-        ))}
-      </div>
+          {/* Si index est égal à i, ajoutez la classe "show"  */}
+          <div className={index === i ? "content show" : "content"}>
+            {item.content}
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }
 
 export default Carrousel;
-
-

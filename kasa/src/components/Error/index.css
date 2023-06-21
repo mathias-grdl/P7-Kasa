@@ -1,12 +1,13 @@
 .error_content {
-text-align:center;
+    text-align: center;
 }
 
 h1 {
     font-weight: 700;
     color: var(--primary-color);
     font-size: clamp(6rem, 1.7746rem + 18.0282vw, 18rem);
-    margin: 164px 0 -6px;;
+    margin: 164px 0 -6px;
+    ;
 }
 
 p {
@@ -22,7 +23,8 @@ p {
     padding-bottom: 50px;
 }
 
-@media screen and (min-width:1024px){
+
+@media screen and (min-width:1024px) {
     h1 {
         margin: 133px 0 -9px;
     }
@@ -31,7 +33,7 @@ p {
         font-size: 36px;
     }
 
-    .error_conten  a {
+    .error_conten a {
         font-size: 18px;
     }
 }

@@ -2,11 +2,11 @@ nav ul {
     display: flex;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     color: var(--primary-color);
     margin-right: 10px;
     font-size: 12px;
@@ -15,7 +15,7 @@ nav ul li a{
 
 
 @media screen and (min-width: 1024px) {
-    nav ul li a{
+    nav ul li a {
         font-size: 24px;
         text-transform: none;
     }

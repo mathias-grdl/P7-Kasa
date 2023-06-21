@@ -1,7 +1,6 @@
 import "./index.css";
-// import React from "react";
 
-function Banner({img, style, text}) {
+function Banner({ img, style, text }) {
   return (
     <div className={style}>
       <img src={img} alt="Bannière kasa" />

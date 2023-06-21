@@ -1,12 +1,12 @@
-import './index.css';
+import "./index.css";
+import { Link } from "react-router-dom";
 
 function Card({ card }) {
-
   return (
-    <div className='card'>
+    <Link to={`/logement/${card.id}`} className="card"> 
       <img src={card.cover} alt={card.title} />
       <h2>{card.title}</h2>
-    </div>
+    </Link>
   );
 }
 

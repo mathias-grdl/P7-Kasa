@@ -1,11 +1,12 @@
 import './style/App.css';
-import React from 'react'
+// import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Header from './components/Header'
 import Footer from './components/Footer/index'
 import ErrorPage from './pages/Error/index'
+import Housing from './pages/Housing/index'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/apropos" element={<About />} />
           <Route path="*" element={<ErrorPage />} />
+          <Route path="/logement/:id" element={<Housing />} />
         </Routes>
       </main>
       <Footer />

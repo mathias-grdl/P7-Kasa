@@ -13,15 +13,15 @@ code {
 } */
 
 
- @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 main {
   font-family: 'Montserrat', sans-serif;
 }
 
-:root{
-    --primary-color:#ff6060;
-    --secondary-color:#F7F7F7;
-    --color-black:#000000;
-    --color-white:#ffffff;
-  }
+:root {
+  --primary-color: #ff6060;
+  --secondary-color: #F7F7F7;
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
