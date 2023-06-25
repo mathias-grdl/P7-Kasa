@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-h1 {
+.error_content h1 {
     font-weight: 700;
     color: var(--primary-color);
     font-size: clamp(6rem, 1.7746rem + 18.0282vw, 18rem);
@@ -10,7 +10,7 @@ h1 {
     ;
 }
 
-p {
+.error_content p {
     color: var(--primary-color);
     margin-bottom: 139px;
     font-size: 18px;
@@ -25,11 +25,11 @@ p {
 
 
 @media screen and (min-width:1024px) {
-    h1 {
+    .error_content h1 {
         margin: 133px 0 -9px;
     }
 
-    p {
+    .error_content p {
         font-size: 36px;
     }
 

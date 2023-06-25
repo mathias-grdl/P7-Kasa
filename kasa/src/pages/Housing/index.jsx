@@ -1,23 +1,29 @@
-import Accordion from "../../components/Accordion";
-
-const data = [
-  {
-    title: "Description",
-    content:
-      "Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied).",
-  },
-  {
-    title: "Équipements",
-    content:
-      "Climatisation Wi-Fi Cuisine Espace de travail Fer à repasser Sèche-cheveux Cintres",
-  },
-];
-
+// import Accordion from "../../components/Accordion";
+import Profil from "../../components/Profil";
+// import Tags from "../../components/Tags";
+import { useParams } from "react-router-dom";
+import data from "./data.json";
+import "./index.css";
 
 function Housting() {
+  const { id } = useParams();
+  const housting = data.find((housting) => housting.id === id);
+
   return (
+    <div className="housting">
+      {/* <Slider/> */}
     <div>
-      <Accordion data={data} />
+      <div className="houstingTitle">
+        <h1>{housting.title}</h1>
+        <p>{housting.location}</p>
+        {/* <Tags/> */}
+      </div>
+
+      <div>
+        <Profil/>
+        {/* <Stars/> */}
+      </div>
+    </div>
     </div>
   );
 }

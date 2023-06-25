@@ -1,0 +1,17 @@
+.Profil {
+display: flex;
+align-items: center;
+}
+
+.Profil p {
+    font-size: 18px;
+    color: #FF6060;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.Profil .ProfilImg img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
