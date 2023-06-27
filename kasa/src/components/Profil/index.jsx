@@ -1,12 +1,12 @@
 import "./index.css";
 
-function Profil() {
+function Profil({name, picture}) {
   return (
     <div className="Profil">
-      <p>Alexandre <br /> Dumas</p>
+      <p>{name}</p>
       <div className="ProfilImg">
         <img
-          src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
+          src={picture}
           alt="Nathalie Jean"
         />
       </div>

@@ -1,8 +1,9 @@
 // import Accordion from "../../components/Accordion";
 import Profil from "../../components/Profil";
+import Slider from "../../components/Slider";
 // import Tags from "../../components/Tags";
 import { useParams } from "react-router-dom";
-import data from "./data.json";
+import data from "../../data/data.json";
 import "./index.css";
 
 function Housting() {
@@ -11,8 +12,8 @@ function Housting() {
 
   return (
     <div className="housting">
-      {/* <Slider/> */}
-    <div>
+      <Slider pictures={housting.cover} />
+    <div className="houstingInfo">
       <div className="houstingTitle">
         <h1>{housting.title}</h1>
         <p>{housting.location}</p>
@@ -20,10 +21,11 @@ function Housting() {
       </div>
 
       <div>
-        <Profil/>
+        <Profil name={housting.host.name} picture={housting.host.picture}/>
         {/* <Stars/> */}
       </div>
     </div>
+    {/* <Accordion /> */}
     </div>
   );
 }
