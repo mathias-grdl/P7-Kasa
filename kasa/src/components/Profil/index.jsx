@@ -1,6 +1,6 @@
 import "./index.css";
 
-function Profil({name, picture}) {
+function Profil({ name, picture }) {
   return (
     <div className="Profil">
       <p>{name}</p>

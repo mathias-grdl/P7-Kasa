@@ -7,7 +7,7 @@ function Header() {
   return (
     <header>
       {logo_kasa(logoImg)}
-      {Navbar()}
+      <Navbar/>
     </header>
   );
 }

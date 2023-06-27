@@ -1,6 +1,5 @@
 import "./index.css";
 import { useState } from "react";
-import React from "react";
 
 function Carrousel({ data }) {
   // index is a state variable and setIndex is the setter function.

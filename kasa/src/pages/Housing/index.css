@@ -10,12 +10,12 @@
 
 @media screen and (min-width:1024px) {
 
-    .houstingInfo{
+    .houstingInfo {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .houstingTitle h1 {
         font-size: 36px;
     }

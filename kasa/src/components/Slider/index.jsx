@@ -1,6 +1,6 @@
 import "./index.css";
 
-function slider({pictures}) {
+function slider({ pictures }) {
   return (
     <div className="Slider">
       <div className="SliderPictures">
