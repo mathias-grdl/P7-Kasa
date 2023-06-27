@@ -1,11 +1,11 @@
 import "./index.css";
 
-function Tag({ tags }) {
+const Tag = ({ tag }) => {
   return (
     <div className="tag">
-      <span>{tags.tags}</span>
+      <span>{tag}</span>
     </div>
-  );
-}
+  )
+};
 
 export default Tag;
