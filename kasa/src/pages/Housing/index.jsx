@@ -1,5 +1,6 @@
 // import Accordion from "../../components/Accordion";
 import Profil from "../../components/Profil";
+import Rating from "../../components/Rating";
 import Slider from "../../components/Slider";
 import Tags from "../../components/Tags";
 import { useParams } from "react-router-dom";
@@ -42,7 +43,7 @@ function Housing() {
 
         <div>
           <Profil name={housing.host.name} picture={housing.host.picture} />
-          {/* <Stars/> */}
+          <Rating rating={housing.rating}/>
         </div>
       </div>
       {/* <Accordion /> */}
