@@ -22,9 +22,9 @@ function Carrousel({ data }) {
             <h2>{item.title}</h2>
             <span>
               {index === i ? (
-                <i class="fa-solid fa-chevron-up"></i>
+                <i className="fa-solid fa-chevron-up"></i>
               ) : (
-                <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                <i className="fa-sharp fa-solid fa-chevron-down"></i>
               )}
             </span>
           </div>

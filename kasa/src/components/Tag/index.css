@@ -1,3 +1,7 @@
+.tag {
+  margin-bottom: 20px;
+}
+
 .tag span {
   background-color: var(--primary-color);
   color: var(--color-white);

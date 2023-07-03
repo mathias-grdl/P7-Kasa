@@ -33,7 +33,7 @@ function Housing() {
 
   return (
     <div className="housing">
-      <Slider pictures={housing.cover} />
+      <Slider slides={housing.pictures} />
       <div className="houstingInfo">
         <div className="houstingTitle">
           <h1>{housing.title}</h1>
