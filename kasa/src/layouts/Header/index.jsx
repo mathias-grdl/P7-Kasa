@@ -1,6 +1,6 @@
 import "./index.css";
-import logo_kasa from "../Logo/index.jsx";
-import Navbar from "../Navbar/index.jsx";
+import logo_kasa from "../../components/Logo/index.jsx";
+import Navbar from "../../components/Navbar/index.jsx";
 import logoImg from "../../asset/images/logo.svg";
 
 function Header() {

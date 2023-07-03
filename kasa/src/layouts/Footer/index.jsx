@@ -1,5 +1,5 @@
 import "./index.css";
-import logo_kasa from "../Logo/index.jsx";
+import logo_kasa from "../../components/Logo/index.jsx";
 import logoImg from "../../asset/images/logoWhite.svg";
 
 function Header() {
