@@ -1,6 +1,6 @@
 import "./index.css";
 
-function rating({ rating }) {
+function Rating({ rating }) {
 
 // Crée un tableau contenant les notes possibles de 1 à 5.
   const stars = [1, 2, 3, 4, 5];
@@ -9,12 +9,12 @@ function rating({ rating }) {
     <div className="stars">
       {stars.map((star, i) => (
         //  Si la note est inférieure ou égale à la valeur de "rating" = class="active", sinon class="inactive"
-        <div key={i} className={rating >= star ? "active" : "inactive"}>
+        <span key={i} className={rating >= star ? "active" : "inactive"}>
           <i className="fa-solid fa-star"></i>
-        </div>
+        </span>
       ))}
     </div>
   );
 }
 
-export default rating;
+export default Rating;

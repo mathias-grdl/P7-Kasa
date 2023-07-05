@@ -13,14 +13,14 @@ function Slider({ slides }) {
       // Si dernière slide, revenir à la première, sinon passer à la suivante
       currentSlide === slides.length - 1 ? 0 : currentSlide + 1
     );
-  };
+  }
 
   function prevSlide() {
     setCurrentSlide(() =>
       // Si première slide, passer à la dernière, sinon passer à la précédente
       currentSlide === 0 ? slides.length - 1 : currentSlide - 1
     );
-  };
+  }
 
   return (
     <div className="slider">
@@ -28,20 +28,22 @@ function Slider({ slides }) {
         <img src={slides[currentSlide]} alt={[currentSlide]} />
       </div>
 
-      {/* && signifie que le code entre les parenthèses sera rendu si la condition currentSlide !== 0 est vraie */}
-      {currentSlide !== 0 && (
-        <aside onClick={prevSlide} className="prev-slide">
+      {/* && signifie que le code entre les parenthèses sera rendu si la condition slides.length !== 1 est vraie */}
+      {slides.length !== 1 && (
+        <p onClick={prevSlide} className="prev-slide">
           <i className="fa-solid fa-chevron-left"></i>
-        </aside>
+        </p>
       )}
 
-      {currentSlide !== slides.length - 1 && (
-        <aside onClick={nextSlide} className="next-slide">
+      {slides.length !== 1 && (
+        <p onClick={nextSlide} className="next-slide">
           <i className="fa-solid fa-chevron-right"></i>
-        </aside>
+        </p>
       )}
 
-      <p className="counter">{currentSlide + 1}/{slides.length}</p>
+      <p className="counter">
+        {currentSlide + 1}/{slides.length}
+      </p>
     </div>
   );
 }

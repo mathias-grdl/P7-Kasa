@@ -1,7 +1,7 @@
 import "./index.css";
 import { useState } from "react";
 
-function Carrousel({ data }) {
+function Accordion({ data }) {
   // index is a state variable and setIndex is the setter function.
   const [index, setIndex] = useState(false);
 
@@ -38,4 +38,4 @@ function Carrousel({ data }) {
   );
 }
 
-export default Carrousel;
+export default Accordion;
