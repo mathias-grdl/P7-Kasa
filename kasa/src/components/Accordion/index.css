@@ -2,12 +2,12 @@
     width: 100%;
 }
 
-.item {
+.accordion .item {
     background: var(--color-white);
     margin-top: 20px;
 }
 
-.title {
+.accordion .title {
     color: var(--color-white);
     display: flex;
     justify-content: space-between;
@@ -18,11 +18,15 @@
     padding: 0 20px;
 }
 
-.title h2 {
+.accordion .title h2 {
     font-weight: 500;
     font-size: 13px;
     line-height: 142.6%;
     color: var(--color-white);
+}
+
+.accordion .title i {
+    font-size: 16px;
 }
 
 .content {
@@ -34,27 +38,27 @@
     font-size: 12px;
 }
 
-.content.show {
-    max-height: 999px;
+.accordion .content.show {
+    max-height: 100%;
     padding: 20px 10px 50px;
 }
 
 
 @media screen and (min-width:1024px) {
-    .item {
-        margin-left: 13vw;
-        margin-right: 13vw;
-    }
 
-    .title h2 {
+    .accordion .title h2 {
         font-size: 24px;
     }
 
-    .content {
+    .accordion .title i {
         font-size: 24px;
     }
 
-    .content.show {
+    .accordion .content {
+        font-size: 24px;
+    }
+
+    .accordion .content.show {
         padding: 30px 20px 20px;
     }
 }

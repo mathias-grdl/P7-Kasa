@@ -18,3 +18,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media screen and (min-width:768px) {
+
+    .fa-star {
+        font-size: 24px;
+    }
+}

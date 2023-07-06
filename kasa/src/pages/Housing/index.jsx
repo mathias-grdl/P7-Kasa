@@ -47,20 +47,26 @@ function Housing() {
   return (
     <div className="housing">
       <Slider slides={housing.pictures} />
-      <div className="houstingInfo">
-        <div className="houstingTitle">
+      <div className="housingInfo">
+        <div className="housingTitle">
           <h1>{housing.title}</h1>
           <p>{housing.location}</p>
           <Tags tags={housing.tags} />
         </div>
 
-        <div>
+        <div className="housingProfil">
           <Profil name={housing.host.name} picture={housing.host.picture} />
           <Rating rating={housing.rating} />
         </div>
       </div>
+      <div className="housingAccordionContainer">
+      <div className="housingAccordion">
       <Accordion data={dataDescription} />
+      </div>
+      <div className="housingAccordion">
       <Accordion data={dataEquipments} />
+      </div>
+      </div>
     </div>
   );
 }

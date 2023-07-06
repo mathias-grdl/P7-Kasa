@@ -49,6 +49,10 @@
         height: 223px;
     }
 
+    .bannerBig {
+        margin-bottom: 50px;
+    }
+
     .banner::before,
     .bannerBig::before {
         border-radius: 25px;
