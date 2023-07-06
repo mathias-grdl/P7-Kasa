@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.accordion .title h2 {
+.housing .accordion .title h2 {
     font-size: 13px;
 }
 
@@ -50,7 +50,7 @@
         width: 46%;
     }
 
-    .accordion .title h2 {
+    .housing .accordion .title h2 {
         font-size: 18px;
     }
 
