@@ -15,7 +15,11 @@
     align-items: center;
 }
 
-@media screen and (min-width:1024px) {
+.accordion .title h2 {
+    font-size: 13px;
+}
+
+@media screen and (min-width:768px) {
 
     .housingInfo {
         display: flex;
@@ -44,6 +48,10 @@
 
     .housingAccordion {
         width: 46%;
+    }
+
+    .accordion .title h2 {
+        font-size: 18px;
     }
 
 }

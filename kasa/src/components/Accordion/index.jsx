@@ -3,12 +3,12 @@ import { useState } from "react";
 
 function Accordion({ data }) {
   // index is a state variable and setIndex is the setter function.
-  const [index, setIndex] = useState(false);
+  const [index, setIndex] = useState(null);
 
   const toggle = (i) => {
     // Si la valeur actuelle de index est égale à i, cela signifie que l'élément i est déjà ouvert
     if (index === i) {
-      return setIndex(false);
+      return setIndex(null);
     }
     // si la valeur actuelle de index est différente de i, cela signifie que l'élément i n'est pas ouvert, donc nous mettons à jour l'état index à i pour ouvrir
     setIndex(i);
@@ -30,7 +30,15 @@ function Accordion({ data }) {
           </div>
           {/* Si index est égal à i, ajoutez la classe "show"  */}
           <div className={index === i ? "content show" : "content"}>
-            {item.content}
+            {Array.isArray(item.content) && item.content.length > 0 ? (
+              item.content.map((content, i) => (
+                <div className="equipement" key={i}>
+                  <span>{content}</span>
+                </div>
+              ))
+            ) : (
+              <p>{item.content}</p>
+            )}
           </div>
         </div>
       ))}

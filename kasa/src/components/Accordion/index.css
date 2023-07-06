@@ -7,6 +7,12 @@
     margin-top: 20px;
 }
 
+.accordion p, .accordion span {
+    margin: 0;
+    line-height: 17px;
+    font-size: 12px;
+}
+
 .accordion .title {
     color: var(--color-white);
     display: flex;
@@ -44,7 +50,13 @@
 }
 
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
+
+    .accordion p, .accordion span {
+        margin: 0;
+        line-height: 25px;
+        font-size: 18px;
+    }
 
     .accordion .title h2 {
         font-size: 24px;

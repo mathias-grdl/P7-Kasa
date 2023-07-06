@@ -24,7 +24,7 @@
 }
 
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
     .error_content h1 {
         margin: 133px 0 -9px;
     }

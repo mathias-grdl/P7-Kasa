@@ -39,7 +39,7 @@ function Housing() {
 
   const dataEquipments = [
     {
-      title: "Equipements",
+      title: "Équipements",
       content: housing.equipments,
     },
   ];
