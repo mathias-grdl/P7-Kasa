@@ -29,17 +29,15 @@ function Accordion({ data }) {
             </span>
           </div>
           {/* Si index est égal à i, ajoutez la classe "show"  */}
-          <div className={index === i ? "content show" : "content"}>
+          <ul className={index === i ? "content show" : "content"}>
             {Array.isArray(item.content) && item.content.length > 0 ? (
               item.content.map((content, i) => (
-                <div className="equipement" key={i}>
-                  <span>{content}</span>
-                </div>
+                <li className="equipement" key={i}>{content}</li>
               ))
             ) : (
               <p>{item.content}</p>
             )}
-          </div>
+          </ul>
         </div>
       ))}
     </div>

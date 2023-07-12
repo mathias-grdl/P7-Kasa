@@ -7,7 +7,7 @@ function Profil({ name, picture }) {
       <div className="ProfilImg">
         <img
           src={picture}
-          alt="Nathalie Jean"
+          alt={name}
         />
       </div>
     </div>

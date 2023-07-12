@@ -35,11 +35,8 @@ function Housing() {
     getData();
   }, []);
 
-  // console.log(data);
   const { id } = useParams();
   const housing = data && data.find((housing) => housing.id === id);
-
-  console.log(housing);
 
   if (!housing) {
     return <p>Chargement en cours...</p>;

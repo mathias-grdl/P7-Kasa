@@ -3,10 +3,6 @@ import { useState } from "react";
 
 function Slider({ slides }) {
   const [currentSlide, setCurrentSlide] = useState(0);
-  // console.log(slides);
-  console.log([currentSlide]);
-  // console.log(slides[currentSlide]);
-  console.log(slides.length - 1);
 
   function nextSlide() {
     setCurrentSlide(() =>

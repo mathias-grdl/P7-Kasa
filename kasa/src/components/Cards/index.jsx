@@ -10,7 +10,7 @@ function Cards() {
   const getData = async () => {
     try {
       // Effectue une requête pour récupérer le fichier JSON
-      const response = await fetch("data.json");
+      const response = await fetch("http://localhost:3000/data.json");
 
       if (!response.ok) {
         //.ok est une propriété booléenne de l'objet Response
