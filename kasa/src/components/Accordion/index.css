@@ -47,6 +47,7 @@
 .accordion .content.show {
     max-height: 100%;
     padding: 20px 10px 50px;
+    margin: 0;
 }
 
 .accordion li.equipement {
