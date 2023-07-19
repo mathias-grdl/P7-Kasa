@@ -3,43 +3,44 @@ import Profil from "../../components/Profil";
 import Rating from "../../components/Rating";
 import Slider from "../../components/Slider";
 import Tags from "../../components/Tags";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./index.css";
 
 function Housing() {
-  // Stocker les données de l'API. La valeur initiale de useState est un tableau vide
   const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const { id } = useParams();
 
-  // Fonction asynchrone pour récupérer les données
   const getData = async () => {
     try {
-      // Effectue une requête pour récupérer le fichier JSON
       const response = await fetch("http://localhost:3000/data.json");
 
       if (!response.ok) {
-        //.ok est une propriété booléenne de l'objet Response
         throw new Error("Erreur lors de la récupération des données.");
       }
 
-      const jsonData = await response.json(); //Extrait les données JSON de la réponse
+      const jsonData = await response.json();
 
-      setData(jsonData); // Met à jour l'état avec les données récupérées
+      setData(jsonData);
+      setLoading(false);
     } catch (error) {
       console.error(error);
+      setLoading(false);
     }
   };
 
-  // Execute getData() au chargement de la page.
   useEffect(() => {
     getData();
   }, []);
 
-  const { id } = useParams();
-  const housing = data && data.find((housing) => housing.id === id);
-
-  if (!housing) {
+  if (loading) {
     return <p>Chargement en cours...</p>;
+  }
+
+  const housing = data && data.find((housing) => housing.id === id);
+  if (!housing) {
+    return <Navigate to="*" />;
   }
 
   const dataDescription = [
