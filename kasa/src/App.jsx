@@ -10,7 +10,7 @@ import Housing from './pages/Housing/index'
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <main>
         <Routes>
@@ -21,7 +21,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
 
